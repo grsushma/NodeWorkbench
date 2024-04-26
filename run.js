@@ -13,3 +13,9 @@ app.post('/getName', function(req, res) {
 
 console.log('Listening to port 3000')
 app.listen(3000)
+
+
+app.put('/getName', function(req, res) {
+    res.status(400);
+    res.json({ name: 'Shrieya'});
+})
